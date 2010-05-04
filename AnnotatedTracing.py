@@ -1,3 +1,26 @@
+'''  
+   EtherAnnotate IDA Pro Plugin
+   Author: Josh Eads (eads.josh@gmail.com)
+   Summary: The second half of my EtherAnnotate Xen modifications from my
+            thesis paper.  Takes an EtherAnnotate instruction trace file,
+            parses the file, and adds annotations of run-time values and
+            code coverage to an IDA Pro .idb file.
+   Last Modified: May 4, 2010
+ 
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+ 
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ '''
+
 from idautils import *
 from idaapi import *
 from sys import exit

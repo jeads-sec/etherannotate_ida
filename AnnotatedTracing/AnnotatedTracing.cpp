@@ -1,3 +1,26 @@
+/*  EtherAnnotate IDA Pro Plugin
+ *  Author: Josh Eads (eads.josh@gmail.com)
+ *  Summary: The second half of my EtherAnnotate Xen modifications from my
+ *           thesis paper.  Takes an EtherAnnotate instruction trace file,
+ *           parses the file, and adds annotations of run-time values and
+ *           code coverage to an IDA Pro .idb file.
+ *  Last Modified: May 4, 2010
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
 #include <windows.h>
 
 #include <ida.hpp>
@@ -107,11 +130,11 @@ void IDAP_run(int arg)
 	return;
 }
 // There isn't much use for these yet, but I set them anyway.
-char IDAP_comment[]       = "This is my test plug-in";
-char IDAP_help[]          = "My plugin";
+char IDAP_comment[]       = "EtherAnnotate IDA Pro Plugin";
+char IDAP_help[]          = "Must be used with EtherAnnotate Xen traces";
 // The name of the plug-in displayed in the Edit->Plugins menu. It
 // can be overridden in the user's plugins.cfg file.
-char IDAP_name[]          = "Annotated Tracing";
+char IDAP_name[]          = "EtherAnnotate";
 // The hot-key the user can use to run your plug-in.
 char IDAP_hotkey[]        = "Alt-1";
 // The all-important exported   PLUGIN object
